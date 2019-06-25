@@ -1,0 +1,271 @@
+
+.home-container{
+    .header{
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+}
+.belt-container{
+    width: 100%;
+    height: 150px;
+    .belt{
+        display: flex;
+        margin: 0 auto;
+        padding: 20px 0px;
+        .belt-space{
+            flex: 1 1 auto;
+        }
+        .belt-icon{
+            width: 80px;
+            height: 80px;
+            // background-color: red;
+            border-radius: 50%;
+
+            mat-icon{
+                margin: 0 auto;
+                text-align: center;
+                font-size: 3em;
+                width: 80px;
+                line-height: 80px;
+                // color: #ffffff;
+            }
+        }
+        .belt-content{
+            padding-left: 20px;
+        }
+        .belt-action{
+            button{
+                padding: 0px 40px;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    
+}
+.service-container{
+    width: 100%;
+    // height: 100%;
+    background: #f5f5f5;
+    margin: 0 auto;
+    padding: 50px 0px;
+    .title{
+        // width: 80%;
+        margin: 0 auto;
+        h1{
+            text-align: center;
+            line-height: 60px;
+        }
+        mat-divider{
+            width: 80px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            padding: 50px;
+
+        }
+    }
+    .service{
+        // width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        margin: 0 auto;
+        .item{
+            // width: 300px;
+            flex: 1;
+            height: 100%;
+            background-color: #ffffff;
+            // margin: 0 10px;
+            .item-image{
+                height: 250px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 250px;
+                }
+            }
+            h1{
+                text-align: center;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 400;
+                color: #000000;
+                text-transform: uppercase;
+                font-size: 16px;
+                line-height: 60px;
+                width: 100%;
+            }
+            mat-divider{
+                width: 80px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                padding: 10px 20px;
+            }
+        }
+        
+    }
+    .service-call-to-action{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 60px;
+        button{
+            padding: 8px 40px;
+            // height: 60px;
+        }
+    }
+}
+.about-container{
+    // height: 500px;
+    padding: 50px 0px;
+    h1, p{
+        text-align: center;
+    }
+    h1{ 
+        line-height: 60px;
+    }
+    p:nth-child(3){
+        padding-bottom: 50px;
+    }
+    .about-content{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        // justify-content: center;
+        .about-image{
+            flex: 1;
+            // justify-content: flex-end;
+            .image{
+                height: 400px;
+                width: 400px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: 400px;
+                }
+            }
+        }
+        .about-message{
+            flex: 1;
+            // justify-content: center;
+            .about-message-container{
+                display: flex;
+                margin: 10px 0px;
+                .about-item-icon{
+                    width: 80px;
+                    height: 80px;
+                    // background-color: red;
+                    border: 1px solid lightgrey;
+                    border-radius: 50%;
+                    mat-icon{
+                        width: 80px;
+                        height: 80px;
+                        text-align: center;
+                        line-height: 80px;
+                        font-size: 2em;
+                        color: #f4bc16;
+                    }
+                }
+                .about-item{
+                    h2, p{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+}
+// Contact container section
+.contact-container{
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 50px 0px;
+    h1{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .contact{
+        display: flex;
+
+        .contact-address{
+            flex: 1;
+            background-color: #ffffff;
+            margin: 0px 5px;
+            // text-align: center;
+            // background-image: url('assets/images/google-map.jpg');
+            .address{
+                margin-bottom: 20px;
+                background-color: #ffffff;
+                width: 220px;
+                padding: 20px;
+                h3{
+                    padding: 0;
+                    margin: 0;
+                    font-display: 'Raleway', sans-serif;
+                    font-weight: 200;
+                    font-size: 18px;
+                    margin: 5px 0px;
+                }
+            }
+     
+            padding: 20px;
+            .email-phone{
+                display: flex;
+                height: 30px;
+                background-color: #ffffff;
+                width: 220px;
+                padding: 0px 20px;
+                mat-icon{
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                }
+                span:nth-child(1){
+                    margin-top: 50px;
+                }
+                p{
+                    padding: 0;
+                    margin: 0;
+                    line-height: 30px;
+                }
+            }
+        }
+        .contact-form{
+            flex: 1;
+            background-color: #ffffff;
+            padding: 20px;
+            .form-el{
+                display: flex;
+                justify-content: space-between;
+                mat-form-field{
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    margin: 0px 5px;
+                }
+                textarea{
+                    height: 80px;
+                }
+            }
+        }
+    }
+}
+
+// Testimony Section
+.testimony-container {
+    width: 100%;
+    height: 500px;
+    background: #f4bc16;
+    background-image: image('assets/images/pexiels-photo-266044.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

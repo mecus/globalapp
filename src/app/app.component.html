@@ -1,21 +1,86 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="top-nav-container">
+  <mat-toolbar class="top-nav">
+    <span>
+      <mat-icon>phone</mat-icon> <p>02988466546</p>
+    </span>
+    <!-- <mat-divider [vertical]="true"></mat-divider> -->
+    <span>
+        <mat-icon>email</mat-icon> <p>info@globalsolicitors.co.uk</p>
+    </span>
+    <!-- <mat-divider [vertical]="true"></mat-divider> -->
+    <span style="border-right: 1px solid lightgrey; padding-right: 20px;">
+        <mat-icon>timer</mat-icon><p>Mon-Fri: 9.00-18.00</p>
+    </span>
+    <!-- This fills the remaining space of the current row -->
+    <span class="space"></span>
 
+    <span class="social">
+      <fa-icon [icon]="['fab', 'facebook']"></fa-icon>
+    </span>
+    <span class="social">
+        <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
+    </span>
+    <span class="social" style="border-right: 1px solid lightgrey;">
+        <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
+    </span>
+
+  </mat-toolbar>
+</div>
+
+<div class="main-nav-container">
+  <mat-toolbar class="main-nav">
+    <span class="brand">Global Solicitors</span>
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="space"></span>
+
+    <span>
+      <a href="#about">About</a>
+    </span>
+    <span>
+      <a href="#services">Services</a>
+    </span>
+    <span>
+        <a href="#contact">Contact</a>
+      </span>
+    <span>
+      <a href="#testimony">Testimony</a>
+    </span>
+  </mat-toolbar>
+</div>
+
+<mat-toolbar class="mobile-nav">
+    <span class="brand">Global Solicitors</span>
+
+    <!-- This fills the remaining space of the current row -->
+    <!-- <span class="space"></span>
+
+    <span>
+      <a href="#about">About</a>
+    </span>
+    <span>
+      <a href="#services">Services</a>
+    </span>
+    <span>
+      <a href="#testimony">Testimony</a>
+    </span> -->
+</mat-toolbar>
 <router-outlet></router-outlet>
+<!-- <button (click)="goToto()">gotop</button> -->
+<div class="footer-contianer">
+    <div class="footer">
+        <h1>Global Solicitors Ltd</h1>
+        <h3>copyright 2018 Global Solicitors Allright Reserved</h3>
+        <h4>
+            Global Solicitors is authorised and regulated by the solicitors regulation authority 
+        </h4>
+        <h4>SRA NO. 628374</h4>
+        <p>Powered by <a href="https://miscotech.co.uk" target="blank" style="color: #f4bc16;"> MISCOTECH </a></p>
+    </div>
+</div>
+
+
+<div (click)="goToto()" class="scroll-up">
+  <mat-icon>keyboard_arrow_up</mat-icon>
+    <!-- <button (click)="goToto()">gotop</button> -->
+</div>

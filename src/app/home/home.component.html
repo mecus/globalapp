@@ -1,0 +1,190 @@
+<div class="home-container">
+  <div class="header">
+    <img src="assets/images/headerbg.jpg" style="width: 100%" alt="">
+  </div>
+</div>
+<!-- After header belt display -->
+<section class="belt-container">
+  <div class="belt inner-container">
+    <div class="belt-icon">
+      <mat-icon>account_balance_wallet</mat-icon>
+    </div>
+    <div class="belt-content">
+        <h1>Low Cost Representation</h1>
+        <p>We can represent you as little as £100</p>
+    </div>
+    <div class="belt-space"></div>
+    <div class="belt-action">
+      <button mat-raised-button color="accent">Get Quote</button>
+    </div>
+  </div>
+</section>
+<!-- Services sections -->
+<section #services class="service-container">
+    <div class="title inner-container">
+        <h1>Our Services</h1>
+        <mat-divider></mat-divider>
+        <p>
+          We are naturally pro-active and our business is managed to specifically promote the highest quality of service. We hold accreditations for the Law Society’s quality standard LEXCEL and the Investors in People quality management system. One of very few law firms to hold both awards.
+        </p>
+    </div>
+    <div class="service inner-container">
+      <div class="item">
+        <div class="item-image">
+          <img src="assets/images/pexels-photo-173666.jpeg" alt="">
+        </div>
+        <h1>Family / Divorce</h1>
+        <mat-divider></mat-divider>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <!-- <mat-divider [vertical]="true"></mat-divider> -->
+      <div class="item">
+        <div class="item-image">
+          <img src="assets/images/pexels-photo-1008155.jpeg" alt="">
+        </div>
+        <h1>Immigration</h1>
+        <mat-divider></mat-divider>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <!-- <mat-divider [vertical]="true"></mat-divider> -->
+      <div class="item">
+        <div class="item-image">
+          <img src="assets/images/road-man-lights-legs.jpg" alt="">
+        </div>
+        <h1>Criminal Law</h1>
+        <mat-divider></mat-divider>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>  
+  </div>
+  <div class="service-call-to-action">
+    <button color="accent" mat-raised-button>View All Services</button>
+  </div>
+</section>
+<!-- About us section -->
+<section class="about-container">
+  <div class="about-us inner-container">
+    <h1>About Us</h1>
+    <p>
+      We are naturally pro-active and our business is managed to specifically promote the highest quality of service. We hold accreditations for the Law Society’s quality standard LEXCEL and the Investors in People quality management system. One of very few law firms to hold both awards.
+    </p>
+    <p>
+      Our clients include entrepreneurs, small and medium-sized family and privately owned businesses, publicly quoted companies, major institutions, significant families and private individuals in the UK and overseas.
+    </p>
+    <div class="about-content">
+      <div class="about-image">
+        <div class="image">
+            <img src="assets/images/manager-cover-letter.jpg" alt="">
+        </div>
+      </div>
+      <div class="about-message">
+        <div class="about-message-container">
+            <div class="about-item-icon">
+                <mat-icon>clear</mat-icon>
+              </div>
+              <div class="about-item">
+                <h2>OVER 15 YEARS EXPERIENCE</h2>
+                <p>
+                  We combine quality workmanship, superior knowledge and low prices to provide you with service unmatched by our competitors.
+                </p>
+              </div>
+        </div>
+        <div class="about-message-container">
+            <div class="about-item-icon">
+              <mat-icon>clear</mat-icon>
+            </div>
+            <div class="about-item">
+              <h2>PROFESSIONAL STANDARDS</h2>
+              <p>
+                We have the experience, personel and resources to make the project run smoothly. We can ensure a job is done on time.
+              </p>
+            </div>
+        </div>
+        <div class="about-message-container">
+            <div class="about-item-icon">
+              <mat-icon>clear</mat-icon>
+            </div>
+            <div class="about-item">
+              <h2>PROFESSIONAL STANDARDS</h2>
+              <p>
+                Work with us involve a carefully planned series of steps, centered around a schedule we stick to and daily communication.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-container">
+  
+  <div class="contact inner-container">
+    <div style="background-image: url('assets/images/google-map.jpg')" class="contact-address">
+      <div class="address">
+          <h3>160a New Cross Road</h3>
+          <h3>London</h3>
+          <h3>SE14 5AA</h3>
+          <h3>United Kingdom</h3>
+      </div>
+      <span class="email-phone">
+        <mat-icon>phone</mat-icon> <p>02988466546</p>
+      </span>
+      <span class="email-phone">
+        <mat-icon>email</mat-icon><p>info@globalsolicitors.co.uk</p>
+      </span>
+    </div>
+    <div class="contact-form">
+        <form [formGroup]="model" (ngSubmit)="sendContact(model.value)">
+            <h1>Contact us</h1>
+            <div class="form-el">
+              <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input formControlName="name" matInput placeholder="Enter phone number">
+                <mat-icon style="color: #ff4081" matSuffix>person</mat-icon>
+
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                  <mat-label>Email</mat-label>
+                  <input formControlName="email" matInput placeholder="Enter email">
+                  <mat-icon style="color: #ff4081" matSuffix>email</mat-icon>
+               
+                </mat-form-field>
+            </div>
+            <div class="form-el">
+              <mat-form-field appearance="outline">
+                <mat-label>Message</mat-label>
+                <textarea formControlName="message" matInput></textarea>
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+              </mat-form-field>
+            </div>
+            <button type="submit" mat-raised-button color="accent">Send</button>
+        </form>
+    </div>
+  </div>
+</section>
+<section style="background-image: url('assets/images/pexels-photo-266044.jpeg');" class="testimony-container">
+  <div class="testimony inner-container">
+      <!-- <h1>Testimony</h1> -->
+      
+      <div class="left-arrow">
+        <mat-icon>keyboard_arrow_left</mat-icon>
+      </div>
+      
+      <div class="comment">
+        <div class="comment-icon">
+          <mat-icon>textsms</mat-icon>
+        </div>
+        <!-- <div class="link-icon">
+          <div class="one">1</div>
+          <div class="zero"></div>
+        </div> -->
+        <p>
+          “We have found the service excellent, and it is for this reason we have continued to use Global Solicitors. The key strengths for us have been a commercial approach to deals that is often missing from solicitors, and a personal service based on a knowledge of us and our needs and long-term plans.”
+        </p>
+        <h3>Jonathan Cage</h3>
+      </div>
+
+      <div class="right-arrow">
+          <mat-icon>keyboard_arrow_right</mat-icon>
+      </div>
+  </div>
+</section>

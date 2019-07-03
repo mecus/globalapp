@@ -1,10 +1,10 @@
 <div class="top-nav-container">
   <mat-toolbar class="top-nav">
-    <span>
+    <span matTooltip="Call us for any enquiries">
       <mat-icon>phone</mat-icon> <p>02988466546</p>
     </span>
     <!-- <mat-divider [vertical]="true"></mat-divider> -->
-    <span>
+    <span matTooltip="Email us with your query">
         <mat-icon>email</mat-icon> <p>info@globalsolicitors.co.uk</p>
     </span>
     <!-- <mat-divider [vertical]="true"></mat-divider> -->
@@ -14,13 +14,13 @@
     <!-- This fills the remaining space of the current row -->
     <span class="space"></span>
 
-    <span class="social">
+    <span matTooltip="Like us on Facebook" matTooltipPosition="before" class="social">
       <fa-icon [icon]="['fab', 'facebook']"></fa-icon>
     </span>
-    <span class="social">
+    <span matTooltip="Follow us on Twitter" class="social">
         <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
     </span>
-    <span class="social" style="border-right: 1px solid lightgrey;">
+    <span matTooltip="Let's Connect on LinkedIn" matTooltipPosition="after" class="social" style="border-right: 1px solid lightgrey;">
         <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
     </span>
 
@@ -29,21 +29,24 @@
 
 <div class="main-nav-container">
   <mat-toolbar class="main-nav">
-    <span class="brand">Global Solicitors</span>
+    <span class="brand">
+      <a href="/#">Global Solicitors</a>
+    </span>
 
     <!-- This fills the remaining space of the current row -->
     <span class="space"></span>
 
-    <span>
-      <a href="#about">About</a>
-    </span>
-    <span>
+
+    <span class="menu-item" matRipple [matRippleColor]="rippleColor">
       <a href="#services">Services</a>
     </span>
-    <span>
-        <a href="#contact">Contact</a>
-      </span>
-    <span>
+    <span class="menu-item" matRipple [matRippleColor]="rippleColor">
+      <a href="#about">About</a>
+    </span>
+    <span class="menu-item" matRipple [matRippleColor]="rippleColor">
+      <a href="#contact">Contact</a>
+    </span>
+    <span class="menu-item" matRipple [matRippleColor]="rippleColor">
       <a href="#testimony">Testimony</a>
     </span>
   </mat-toolbar>
@@ -70,7 +73,7 @@
 <div class="footer-contianer">
     <div class="footer">
         <h1>Global Solicitors Ltd</h1>
-        <h3>copyright 2018 Global Solicitors Allright Reserved</h3>
+        <h3>copyright 2019 Global Solicitors Allright Reserved</h3>
         <h4>
             Global Solicitors is authorised and regulated by the solicitors regulation authority 
         </h4>
@@ -80,7 +83,7 @@
 </div>
 
 
-<div (click)="goToto()" class="scroll-up">
+<div (click)="goToto()" class="scroll-up" matRipple [matRippleColor]="rippleColor">
   <mat-icon>keyboard_arrow_up</mat-icon>
     <!-- <button (click)="goToto()">gotop</button> -->
 </div>

@@ -12,6 +12,11 @@ import { HomeComponent } from './home/home.component';
 // import { fas } from '@fortawesome/free-solid-svg-icons';
 // import { far } from '@fortawesome/free-regular-svg-icons';
 import { faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { SlideHeaderComponent } from './carosel/slide-header/slide-header.component';
+import { DisplayzoneDirective } from './carosel/displayzone.directive';
+import { SlideOneComponent } from './carosel/slide-one/slide-one.component';
+import { SlideTwoComponent } from './carosel/slide-two/slide-two.component';
+import { HeaderService } from './carosel/header-service';
 const fa = [faLinkedin, faTwitter, faFacebook]
 // library.add(fas, far);
 library.add(...fa);
@@ -20,7 +25,11 @@ library.add(...fa);
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SlideHeaderComponent,
+    DisplayzoneDirective,
+    SlideOneComponent,
+    SlideTwoComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +40,8 @@ library.add(...fa);
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [HeaderService],
+  entryComponents: [SlideOneComponent, SlideTwoComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {

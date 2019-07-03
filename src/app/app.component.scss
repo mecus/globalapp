@@ -1,14 +1,20 @@
+.active{
+    background-color: #ff4081;
+}
 .main-nav-container{
+
     background-color: #ffffff;
     width: 100%;
     margin: 0;
     padding: 0;
+    // box-shadow: 0px 2px #f5f5f5;
     mat-toolbar.main-nav{
         width: 92%;
         margin: 0;
         padding: 0;
         margin: 0 auto;
-        background-color: #ffffff;
+        background: transparent;
+        // background-color: #ffffff;
         display: flex;
         height: 80px;
         transition: 0.5s;
@@ -16,21 +22,32 @@
             font-family: 'Raleway', sans-serif;
             font-size: 1.2em;
             font-weight: 600;
-            color: #f4bc16;
+            text-transform: uppercase;
+            // color: #f4bc16;
+            a{
+                color: #f4bc16;
+            }
         }
         .space{
             flex: 1 1 auto;
         }
-        span{ 
-            margin-left: 20px;
+
+        span.menu-item{ 
+            // margin-left: 20px;
             font-size: 0.8em;
             font-family: 'Raleway', sans-serif;
             font-weight: 400;
             text-transform: uppercase;
+            line-height: 80px;
+            padding: 0px 10px;
             // color: gray;
             a{
                 color: #000000;
                 opacity: 0.7;
+                line-height: 80px;
+            }
+            &:hover{
+                background-color: #ff4081;
             }
         }
         span:nth-child(1){
@@ -42,6 +59,7 @@
 
 
 .top-nav-container{
+
     background-color: #F5F5F5;
     margin: 0;
     padding: 0;
@@ -186,7 +204,7 @@ mat-toolbar.mobile-nav{
         }
     }
     .main-nav-container{
-        background-color: #ffffff;
+        // background-color: #ffffff;
         mat-toolbar.main-nav{
             width: 65%;
             margin: 0 auto;
@@ -211,7 +229,7 @@ mat-toolbar.mobile-nav{
     }
     .main-nav-container{
         display: none;
-        background-color: #ffffff;
+        // background-color: #ffffff;
         mat-toolbar.main-nav{
             width: 65%;
             margin: 0 auto;
